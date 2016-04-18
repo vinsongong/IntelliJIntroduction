@@ -2,7 +2,7 @@ package edu.ucsd.cs110.temperature; import static org.junit.Assert.*; import org
 public class FahrenheitTest {
     private float delta = 0.001f;
     @Test
-    public void testFahrenheit(){
+    public void testFahrgitenheit(){
         float value = 12.34f;
         Fahrenheit temp = new Fahrenheit(value);
         assertEquals(value, temp.getValue(), delta); }

@@ -40,8 +40,7 @@ public class TemperatureConverter {
             System.out.print("Enter the unit to convert TO: ");
             if((input = reader.readLine()) == null) System.exit(0);
 
-            switch(input.toLowerCase().charAt(0))
-            {
+            switch(input.toLowerCase().charAt(0)) {
                 case 'c':
                     outputTemp = inputTemp.toCelsius();
                     break;
@@ -53,7 +52,7 @@ public class TemperatureConverter {
                     continue;
             }
 
-            System.out.println("\n The converted temperature is " + outputTemp.getValue() +"\n\n");
+            System.out.println("\n The converted temperature is " + outputTemp.toString() + "\n\n");
         }
     }
 
